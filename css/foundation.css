@@ -171,7 +171,7 @@ dfn {
      * Add the correct background and color in IE 9-.
      */
 mark {
-  background-color: #ff0;
+  background-color: #ffffff;
   color: #000; }
 
 /**
@@ -444,7 +444,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #fefefe;
+  background: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
