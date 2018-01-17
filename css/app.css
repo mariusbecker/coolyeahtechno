@@ -13,3 +13,19 @@ h2 {
   color: #ffffff;
 
 }
+
+h3 {
+  font-family: cursive;
+  font-size: 2em;
+  margin: 0.67em 0;
+  text-align: left;
+
+}
+
+p {
+  font-family: monospace;
+  font-size: 1em;
+  margin: 0.67em 0;
+  text-align: left;
+
+}
