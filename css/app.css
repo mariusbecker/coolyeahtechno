@@ -43,3 +43,13 @@ p {
     margin: 4px 2px;
     cursor: pointer;
 }
+
+img.rotate {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+          transition:         transform .5s ease-in-out;
+}
+img.rotate:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(-180deg);
+}
