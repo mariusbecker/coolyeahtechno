@@ -70,8 +70,10 @@ p {
   min-height: 100%
 }
 
+#imgHover:hover { margin-top: -15px; }
+
 img.rotate {
-  border-radius: 50%;
+  border-radius: 100%;
   -webkit-transition: -webkit-transform .5s ease-in-out;
           transition:         transform .5s ease-in-out;
 }
@@ -119,3 +121,39 @@ img.rotate:hover {
 @-webkit-keyframes wiggle{0%{-webkit-transform:rotate(3deg);}50%{-webkit-transform:rotate(-3deg);}100%{-webkit-transform:rotate(3deg);}}
 @keyframes wiggle{0%{transform:rotate(3deg);}50%{transform:rotate(-3deg);}100%{transform:rotate(3deg);}}
 .wiggle-me:hover{-ms-animation:wiggle .1s 2;-moz-animation:wiggle .1s 2;-webkit-animation:wiggle .1s 2;animation:wiggle .4s 2;}
+
+
+@-ms-keyframes wiggle{0%{-ms-transform:rotate(6deg);}50%{-ms-transform:rotate(-6deg);}100%{-ms-transform:rotate(6deg);}}
+@-moz-keyframes wiggle{0%{-moz-transform:rotate(6deg);}50%{-moz-transform:rotate(-6deg);}100%{-moz-transform:rotate(6deg);}}
+@-webkit-keyframes wiggle{0%{-webkit-transform:rotate(6deg);}50%{-webkit-transform:rotate(-6deg);}100%{-webkit-transform:rotate(6deg);}}
+@keyframes wiggle{0%{transform:rotate(6deg);}50%{transform:rotate(-6deg);}100%{transform:rotate(3deg);}}
+.wiggle-me-more:hover{-ms-animation:wiggle .3s 2;-moz-animation:wiggle .1s 3;-webkit-animation:wiggle .3s 2;animation:wiggle .3s 3;}
+
+
+
+@keyframes beat
+{
+  0%
+  {
+    transform: scale( .9 );
+  }
+  50%
+  {
+    transform: scale( 1 );
+  }
+
+  100%
+  {
+    transform: scale( .9 );
+  }
+}
+
+div.beat {
+  animation: beat .5s infinite;
+}
+
+
+.fullcontainer {
+  height: 100vh;
+  
+}
