@@ -30,11 +30,28 @@ h4 {
 
 }
 
+h5 {
+  font-family: inherit;
+  font-size: 8em;
+  text-align: center;
+  color: #ffff00;
+
+}
+
 p {
   font-family: monospace;
   font-size: 1em;
   margin: 0.67em 0;
   text-align: left;
+
+}
+
+  p1 {
+    font-family: monospace;
+    font-size: 1.5em;
+    line-height: 1.4em;
+    margin-top: 1em;
+    text-align: left;
 
 }
 
@@ -66,6 +83,20 @@ p {
     cursor: pointer;
 }
 
+.button2 {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: monospace;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
 .cap {
   min-height: 100%
 }
@@ -73,13 +104,12 @@ p {
 #imgHover:hover { margin-top: -15px; }
 
 img.rotate {
-  border-radius: 100%;
   -webkit-transition: -webkit-transform .5s ease-in-out;
           transition:         transform .5s ease-in-out;
 }
 img.rotate:hover {
   -webkit-transform: rotate(180deg);
-          transform: rotate(-180deg);
+          transform: rotate(180deg);
 }
 
 .foo img:last-child{display:none}
@@ -161,4 +191,9 @@ div.beat {
 .fullcontainer {
   height: 100vh;
 
+}
+
+.checkbox-container {
+  width: 100vw;
+  height: 100vh;
 }
