@@ -55,6 +55,16 @@ p {
 
 }
 
+a {
+  font-family: monospace;
+  color: #000000;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  margin-top: 1em;
+  text-align: left;
+
+}
+
 .button {
     background-color: #000000;
     border: none;
@@ -196,4 +206,8 @@ div.beat {
 .checkbox-container {
   width: 100vw;
   height: 100vh;
+}
+
+checkbox {
+  padding-top: -3px;
 }
