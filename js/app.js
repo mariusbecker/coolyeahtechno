@@ -10,9 +10,12 @@ $(document).ready(function () {
   const checkboxesY = container.height() / firstCheckbox.height();
   const checkboxesTotal = checkboxesX * checkboxesY - 1;
   const newCheckbox = '<input type="checkbox">';
+  const newCheckboxes = [];
 
   for (let i = 0; i < checkboxesTotal; i = i + 1) {
-  	container.append(newCheckbox);
+  	newCheckboxes.push(newCheckbox);
   }
+
+  container.append(newCheckboxes.join(''));
 
 });
