@@ -9,34 +9,91 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
 
+  <style>
+  * {
+      box-sizing: border-box;
+  }
+
+  body {
+      margin: 0;
+      font-family: Arial;
+  }
+
+p {
+  font-family: sans-serif;
+  text-align: center;
+
+}
+
+  .header {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 32px;
+  }
+
+  .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+  }
+
+  /* Create four equal columns that sits next to each other */
+  .column {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+  }
+
+  .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+  }
+
+
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+      .column {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%;
+      }
+  }
+  </style>
 
 
   <body>
 
-    <div class="grid-container">
-
-      <div class="grid-x grid-padding-x">
-        <div class="large-5 medium-5 small-10 large-offset-1 medium-offset-1 small-offset-1 column">
-          <img src="img/1-cool.png" alt="Cool">
-        </div>
-        <div class="large-5 medium-5 small-8 large-offset-0 medium-offset-0 small-offset-2 column">
-          <img src="img/2-yeah.png" alt="Yeah">
-        </div>
-      </div>
-
-      <div class="grid-x grid-padding-x">
-        <div class="large-8 medium-8 small-12 large-offset-2 medium-offset-2 small-offset-0 column">
-          <img src="img/3-techno.png" alt="Techno">
-        </div>
-      </div>
-
-      <div class="grid-x grid-padding-x">
-        <div class="large-6 medium-6 small-8 large-offset-3 medium-offset-3 small-offset-2 column">
-          <img src="img/4-today.png" alt="Das Heute von Gestern">
-        </div>
-      </div>
+    <!-- Header -->
+    <div class="header">
+      <h1>Waste Gallery</h1>
+      <p>Here I publish all screenshots from drawings you created with the superfancy <a href="5-waste.html">CHECKBOX-DRAWING-TOOL</a> I get from you</p>
 
     </div>
+
+    <!-- Photo Grid -->
+    <div class="row">
+      <div class="column">
+        <img src="draw-img/1.png" style="width:100%">
+
+      </div>
+      <div class="column">
+        <img src="draw-img/2.png" style="width:100%">
+
+      </div>
+      <div class="column">
+        <img src="draw-img/3.png" style="width:100%">
+
+      </div>
+      <div class="column">
+        <img src="draw-img/4.png" style="width:100%">
+
+      </div>
+    </div>
+
 
 
 
