@@ -13,107 +13,50 @@
 
   <style>
 
+  h1 {
+    font-family: 'Six Caps';
+    font-size: 15em;
+    color: #ff0000;
+    white-space: nowrap;
 
-    p {
-      font-family: 'VT323';
-      font-size: 1.5em;
-      margin-left: 25px;
-      text-align: left;
-      color: #000000;
-    }
-
-    h1 {
-      font-family: 'Graduate', cursive;
-      font-size: 4em;
-      margin: 20px;
-      text-align: left;
-
-    }
-
-
-
-
-  * {
-      box-sizing: border-box;
   }
 
-  body {
+
+  body, html {
+      height: 100%;
       margin: 0;
-      font-family: Arial;
+  }
+
+  .overlaytext {
+    position: fixed;
+    top: calc(50vh - 340px);
+    left: 0;
   }
 
 
+  .bg {
+      /* The image used */
+      background-image: url("img/10-waste-map.png");
 
-}
+      /* Full height */
+      height: 100%;
 
-  .header {
-      font-family: sans-serif;
-      text-align: center;
-      padding: 32px;
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
   }
 
-  .row {
-      display: -ms-flexbox; /* IE10 */
-      display: flex;
-      -ms-flex-wrap: wrap; /* IE10 */
-      flex-wrap: wrap;
-      padding: 0 4px;
-  }
-
-  /* Create four equal columns that sits next to each other */
-  .column {
-      -ms-flex: 25%; /* IE10 */
-      flex: 25%;
-      max-width: 25%;
-      padding: 0 4px;
-  }
-
-  .column img {
-      margin-top: 8px;
-      vertical-align: middle;
-  }
-
-
-
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media (max-width: 600px) {
-      .column {
-          -ms-flex: 100%;
-          flex: 100%;
-          max-width: 100%;
-      }
-  }
   </style>
-
 
   <body>
 
-    <div class="header">
-      <h1>Waste Gallery</h1>
-      <p>Here I publish all screenshots from drawings you created with the superfancy <a href="5-waste.html">CHECKBOX-DRAWING-TOOL</a> I get from you.</p>
+    <div class="bg"></div>
 
-    </div>
-
-    <div class="row">
-      <div class="column">
-        <img src="draw-img/1.png" style="width:100%">
-        <img src="draw-img/5.png" style="width:100%">
-
-      </div>
-      <div class="column">
-        <img src="draw-img/2.png" style="width:100%">
-        <img src="draw-img/6.png" style="width:100%">
-
-      </div>
-      <div class="column">
-        <img src="draw-img/3.png" style="width:100%">
-        <img src="draw-img/7.png" style="width:100%">
-
-      </div>
-      <div class="column">
-        <img src="draw-img/4.png" style="width:100%">
-
-      </div>
+    <div class="overlaytext">
+      <marquee behavior="scroll" direction="left" scrolldelay="20" scrollamount="20" loop>
+        <h1>Ich gehe . Abwärts . Müll scheppert . Es geht aufwärts . Wasser ist unter mir . Eine Strasse , ein Geländer . Wasser ist jetzt rechts von mir . Bäume , eine Tram quietscht . Keiner spricht , jeder ist für sich . Es stinkt . Zigaretten liegen im Kies . Flaschen und Dosen trennen mich vom Wasser . Bäume . Unter mir wieder Wasser . Jetzt ist das Wasser links von mir . Links Kunst . Und Flaschen und Dosen . Schon wieder Wasser unter mir . Gleich zwei Mal . Autos neben mir , Autos über mir . Es stinkt . Cool Yeah Techno .</h1>
+      </marquee>
     </div>
 
 

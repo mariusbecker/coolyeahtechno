@@ -7,19 +7,127 @@
     <title>Cool Yeah Techno</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Graduate|Lora:400,400i,700,700i|Pacifico|Quicksand:300,400,500,700|Roboto+Slab:100,300,400,700|Six+Caps|VT323" rel="stylesheet">
+
   </head>
 
   <style>
+
+
+    p {
+      font-family: 'VT323';
+      font-size: 1.5em;
+      margin-left: 25px;
+      text-align: left;
+      color: #000000;
+    }
+
+    h1 {
+      font-family: 'Graduate', cursive;
+      font-size: 4em;
+      margin: 20px;
+      text-align: left;
+
+    }
+
+
+
+
+  * {
+      box-sizing: border-box;
+  }
+
   body {
-      background-image: url("img/8-waste-screen1.gif");
-      background-repeat: repeat-xy;
+      margin: 0;
+      font-family: Arial;
+  }
+
+
+
+}
+
+  .header {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 32px;
+  }
+
+  .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+  }
+
+  /* Create four equal columns that sits next to each other */
+  .column {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+  }
+
+  .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+  }
+
+
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+      .column {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%;
+      }
   }
   </style>
 
 
   <body>
 
-    <a href="index.html"><img src="img/8-waste-close1.png" alt="Burn!" onclick="alert('Ohne Speichern schliessen?')" style="width: 5%"></a>
+    <div class="header">
+      <h1>Waste Gallery</h1>
+      <p>Here I publish all screenshots from drawings you created with the superfancy <a href="5-waste.html">CHECKBOX-DRAWING-TOOL</a> I get from you.</p>
+
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img src="draw-img/1.png" style="width:100%">
+        <img src="draw-img/5.png" style="width:100%">
+        <img src="draw-img/9.png" style="width:100%">
+        <img src="draw-img/13.png" style="width:100%">
+        <img src="draw-img/17.png" style="width:100%">
+
+      </div>
+      <div class="column">
+        <img src="draw-img/2.png" style="width:100%">
+        <img src="draw-img/6.png" style="width:100%">
+        <img src="draw-img/10.png" style="width:100%">
+        <img src="draw-img/14.png" style="width:100%">
+        <img src="draw-img/18.png" style="width:100%">
+
+      </div>
+      <div class="column">
+        <img src="draw-img/3.png" style="width:100%">
+        <img src="draw-img/7.png" style="width:100%">
+        <img src="draw-img/11.png" style="width:100%">
+        <img src="draw-img/15.png" style="width:100%">
+
+      </div>
+      <div class="column">
+        <img src="draw-img/4.png" style="width:100%">
+        <img src="draw-img/8.png" style="width:100%">
+        <img src="draw-img/12.png" style="width:100%">
+        <img src="draw-img/16.png" style="width:100%">
+
+      </div>
+    </div>
+
+
 
 
     <script src="js/vendor/jquery.js"></script>
