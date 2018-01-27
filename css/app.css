@@ -111,7 +111,7 @@ a {
   min-height: 100%
 }
 
-#imgHover:hover { margin-top: -15px; }
+#imgHover:hover { margin-top: -50px; }
 
 img.rotate {
   -webkit-transition: -webkit-transform .5s ease-in-out;
